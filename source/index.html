@@ -2,12 +2,53 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="main-header">
+      <a class="main-header__logo logo">
+        <img class="logo__image" src="./img/logo.svg" height="32" width="36" alt="Логотип Drink2Go">
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__user nav-user">
+          <ul class="nav-user__list">
+            <li class="nav-user__item">
+              <a class="nav-user__link" href="#">
+                <span class="visually-hidden">Аккаунт</span>
+              </a>
+            </li>
+            <li class="nav-user__item">
+              <a class="nav-user__link" href="#">
+                <span class="visually-hidden">Корзина</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__menu nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link">Главная</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link">Каталог</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link">Доставка</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link">О нас</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </nav>
+
+
+    </header>
 
     <script src="./js/script.js" defer></script>
   </body>
