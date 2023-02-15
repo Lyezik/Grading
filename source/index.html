@@ -122,7 +122,6 @@
       <div class="catalog__filter filter">
         <fieldset class="filter__price price">
           <legend class="price__title">Цена</legend>
-          <div class="range">
             <div class="range-scale">
               <div class="range-bar" style="left: 0; width: 228px">
                 <button class="range-toggle toggle-min" type="button">
@@ -133,15 +132,14 @@
                 </button>
               </div>
             </div>
-            <div class="range-wrapper-inputs">
-              <label class="catalog-filter-label">
-                <input class="range-input catalog-filter-label-min" type="number" value="0" name="min-price">
+            <div class="price__wrapper">
+              <label class="price-label">
+                <input class="price-label__input price-label__input-min" type="number" value="0" name="min-price">
               </label>
-              <label class="catalog-filter-label">
-                <input class="range-input catalog-filter-label-max" type="number" value="900" name="max-price">
+              <label class="price-label">
+                <input class="price-label__input price-label__input-max" type="number" value="900" name="max-price">
               </label>
             </div>
-          </div>
         </fieldset>
         <fieldset class="filter__milk milk">
           <legend class="milk__title">Наличие молока</legend>
