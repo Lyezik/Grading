@@ -117,12 +117,11 @@
       </ul>
     </section>
     <section class="catalog">
-      <p class="catalog__badge">Каталог</p>
+      <p class="catalog__description">Каталог</p>
       <h2 class="catalog__title">Каталог кофейных напитков</h2>
       <div class="catalog__filter filter">
         <fieldset class="filter__price price">
           <legend class="price__title">Цена</legend>
-          <div class="range">
             <div class="range-scale">
               <div class="range-bar" style="left: 0; width: 228px">
                 <button class="range-toggle toggle-min" type="button">
@@ -133,85 +132,84 @@
                 </button>
               </div>
             </div>
-            <div class="range-wrapper-inputs">
-              <label class="catalog-filter-label">
-                <input class="range-input catalog-filter-label-min" type="number" value="0" name="min-price">
+            <div class="price__wrapper">
+              <label class="price-label">
+                <input class="price-label__input price-label__input-min" type="number" value="0" name="min-price">
               </label>
-              <label class="catalog-filter-label">
-                <input class="range-input catalog-filter-label-max" type="number" value="900" name="max-price">
+              <label class="price-label">
+                <input class="price-label__input price-label__input-max" type="number" value="900" name="max-price">
               </label>
             </div>
-          </div>
         </fieldset>
         <fieldset class="filter__milk milk">
           <legend class="milk__title">Наличие молока</legend>
           <ul class="milk__list">
             <li class="milk__item">
-              <label class="control button">
-                <input class="control__input" type="radio" name="milk" value="no-matter" checked>
-                <span class="control__mark"></span>
-                <span class="control__label control__label--font">Неважно</span>
+              <label class="radio-label button">
+                <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-matter" checked>
+                <span class="radio-label__mark"></span>
+                <span class="radio-label__description">Неважно</span>
               </label>
             </li>
             <li class="milk__item">
-              <label class="control button">
-                <input class="control__input" type="radio" name="milk" value="only-animals">
-                <span class="control__mark"></span>
-                <span class="control__label control__label--font">Только животные</span>
+              <label class="radio-label button">
+                <input class="radio-label__input visually-hidden" type="radio" name="milk" value="only-animals">
+                <span class="radio-label__mark"></span>
+                <span class="radio-label__description">Только животные</span>
               </label>
             </li>
             <li class="milk__item">
-              <label class="control button">
-                <input class="control__input" type="radio" name="milk" value="only-plants">
-                <span class="control__mark"></span>
-                <span class="control__label control__label--font">Только растительное</span>
+              <label class="radio-label button">
+                <input class="radio-label__input visually-hidden" type="radio" name="milk" value="only-plants">
+                <span class="radio-label__mark"></span>
+                <span class="radio-label__description">Только растительное</span>
               </label>
             </li>
             <li class="milk__item">
-              <label class="control button">
-                <input class="control__input" type="radio" name="milk" value="no-milk" disabled>
-                <span class="control__mark"></span>
-                <span class="control__label control__label--font">Без молока</span>
+              <label class="radio-label button">
+                <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-milk" disabled>
+                <span class="radio-label__mark"></span>
+                <span class="radio-label__description">Без молока</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter__country country">
-          <legend class="country__title country__title--font">Страна произрастания</legend>
+          <legend class="country__title">Страна произрастания</legend>
           <ul class="country__list">
             <li class="country__item">
-              <label class="control-checkbox button">
-                <input class="control-checkbox__input" type="checkbox" name="Brazil" checked>
-                <span class="control-checkbox__mark"></span>
-                <span class="control-checkbox__label control-checkbox__label--font">Бразилия</span>
+              <label class="checkbox-label button">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="Brazil" checked>
+                <span class="checkbox-label__mark"></span>
+                <span class="checkbox-label__description">Бразилия</span>
               </label>
             </li>
             <li class="country__item">
-              <label class="control-checkbox button">
-                <input class="control-checkbox__input" type="checkbox" name="Ethiopia">
-                <span class="control-checkbox__mark"></span>
-                <span class="control-checkbox__label control-checkbox__label--font">Эфиопия</span>
+              <label class="checkbox-label button">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="Ethiopia">
+                <span class="checkbox-label__mark"></span>
+                <span class="checkbox-label__description">Эфиопия</span>
               </label>
             </li>
             <li class="country__item">
-              <label class="control-checkbox button">
-                <input class="control-checkbox__input" type="checkbox" name="Colombia">
-                <span class="control-checkbox__mark"></span>
-                <span class="control-checkbox__label control-checkbox__label--font">Колумбия</span>
+              <label class="checkbox-label button">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="Colombia">
+                <span class="checkbox-label__mark"></span>
+                <span class="checkbox-label__description">Колумбия</span>
               </label>
             </li>
             <li class="country__item">
-              <label class="control-checkbox button">
-                <input class="control-checkbox__input" type="checkbox" name="Costa-Rica">
-                <span class="control-checkbox__mark"></span>
-                <span class="control-checkbox__label control-checkbox__label--font">Коста-Рика</span>
+              <label class="checkbox-label button">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="Costa-Rica">
+                <span class="checkbox-label__mark"></span>
+                <span class="checkbox-label__description">Коста-Рика</span>
               </label>
             </li>
             <li class="country__item">
-              <label class="control-checkbox button">
-                <input class="control-checkbox__input" type="checkbox" name="Peru" disabled>
-                <span class="control-checkbox__mark"></span>
-                <span class="control-checkbox__label control-checkbox__label--font">Перу</span>
+              <label class="checkbox-label button">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="Peru" disabled>
+                <span class="checkbox-label__mark"></span>
+                <span class="checkbox-label__description">Перу</span>
               </label>
             </li>
           </ul>
