@@ -1,3 +1,35 @@
 .range-scale {
-  margin-bottom: 25px;
+  position: relative;
+  width: 280px;
+  margin-bottom: 37px;
+  height: 2px;
+  background: #e2e2e2;
+}
+
+.range-scale__bar {
+  height: 4px;
+  background: #9070ec;
+  position: absolute;
+  top: -1px;
+}
+
+.range-scale__toggle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9070ec;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-scale__toggle--min {
+  position: absolute;
+  left: -12px;
+  top: calc(50% - 24px/2 + 0.45px);
+}
+
+.range-scale__toggle--max {
+  position: absolute;
+  right: -12px;
+  top: calc(50% - 24px/2 + 0.45px);
 }
