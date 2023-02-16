@@ -3,4 +3,35 @@
   width: 32px;
   height: 36px;
   padding: 12px 20px;
+
+  @media (min-width: 768px) {
+    width: 82px;
+    padding: 22px 20px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 170px;
+    padding: 22px 40px;
+
+    &::after {
+      content: "Интернет-магазин кофейных напитков";
+      position: absolute;
+      width: 126px;
+      font-size: 12px;
+      line-height: 16px;
+      top: 24px;
+      left: 230px;
+    }
+  }
+}
+
+.header-logo__image {
+  @media (min-width: 768px) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 170px;
+  }
 }
