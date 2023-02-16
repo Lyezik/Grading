@@ -12,24 +12,33 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo header-logo">
-      <img class="header-logo__image" src="./img/logo-small.svg" width="32" height="36" alt="Логотип Drink2Go">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/logo-big.svg">
+        <source media="(min-width: 768px)"
+          srcset="./img/logo-middle.svg">
+        <img class="header-logo__image" src="./img/logo-small.svg" width="32" height="36" alt="Логотип Drink2Go">
+      </picture>
     </a>
     <div class="main-header__user nav-user">
       <ul class="nav-user__list">
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
             <span class="visually-hidden">Аккаунт</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav-user__svg-user" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#user"></use>
             </svg>
+            <span class="nav-user__description">Войти</span>
           </a>
         </li>
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
             <span class="visually-hidden">Корзина</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="nav-user__svg-basket" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#basket"></use>
             </svg>
+            <span class="nav-user__description">Корзина</span>
           </a>
         </li>
       </ul>
@@ -66,11 +75,11 @@
         <svg class="slider__svg" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/icons/stack.svg#arrow-left"></use>
         </svg>
-        <span class="visually-hidden">Переход на предыдущий слайд.</span>
+        <span class="visually-hidden">Переход на предыдущий слайд</span>
       </button>
       <div class="slider__card">
         <img class="slider__img" src="/img/flat_white.png" width="280" height="280" alt="Банка с кофейным напитком">
-        <p class="slider__badge">Новинка!</p>
+        <p class="slider__text">Новинка!</p>
         <h2 class="slider__title">Декаф Флэт Уайт</h2>
         <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
           что нужно для расслабления после тяжёлого рабочего дня</p>
@@ -84,12 +93,12 @@
         <svg class="slider__svg" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/icons/stack.svg#arrow-right"></use>
         </svg>
-        <span class="visually-hidden">Переход на следующий слайд.</span>
+        <span class="visually-hidden">Переход на следующий слайд</span>
       </button>
     </section>
 
     <section class="advantages">
-      <p class="advantages__badge">Преимущества</p>
+      <p class="advantages__text">Преимущества</p>
       <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages-card">
@@ -384,6 +393,7 @@
         </ul>
       </div>
     </section>
+
     <section class="map">
       <h2 class="visually-hidden">Магазин Drink2Go на карте</h2>
       <div class="map__container" id="map"></div>
@@ -398,23 +408,24 @@
         </svg>
         <span class="visually-hidden">Логотип Drink2Go</span>
       </div>
+
       <section class="main-footer__social social">
-        <h2 class="visually-hidden">Социальные сети.</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item button">
-            <span class="visually-hidden">Vkontakte.</span>
+            <span class="visually-hidden">Vkontakte</span>
             <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#vk"></use>
             </svg>
           </li>
           <li class="social__item button">
-            <span class="visually-hidden">Pinterest.</span>
+            <span class="visually-hidden">Pinterest</span>
             <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#pinterest"></use>
             </svg>
           </li>
           <li class="social__item button">
-            <span class="visually-hidden">Одноклассники.</span>
+            <span class="visually-hidden">Одноклассники</span>
             <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#ok"></use>
             </svg>
@@ -422,6 +433,7 @@
         </ul>
       </section>
     </div>
+
     <ul class="main-footer__list">
       <li class="main-footer__item">
         <section class="main-footer__market market">
@@ -491,7 +503,7 @@
           <h2 class="contacts__title">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <span class="visually-hidden">Адрес.</span>
+              <span class="visually-hidden">Адрес</span>
               <svg class="contacts__adress-svg" width="13" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/icons/stack.svg#adress"></use>
               </svg>
@@ -512,8 +524,9 @@
         </section>
       </li>
     </ul>
+
     <section class="main-footer__develop develop">
-      <h2 class="visually-hidden">Develop info.</h2>
+      <h2 class="visually-hidden">Develop info</h2>
       <p class="develop__text">Разработано в</p>
       <a class="develop__button button" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="develop__button-text">HTML Academy</p>
