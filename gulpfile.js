@@ -103,6 +103,11 @@ export function startServer (done) {
   done();
 }
 
+export function processMap () {
+  return gulp.src('source/map/leaflet.css')
+    .pipe(gulp.dest('build/map'));
+}
+
 function reloadServer (done) {
   browser.reload();
   done();
@@ -123,7 +128,8 @@ function compileProject (done) {
     createStack,
     copyAssets,
     optimizeImages,
-    createWebp
+    createWebp,
+    processMap
   )(done);
 }
 
