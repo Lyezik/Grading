@@ -1,6 +1,14 @@
 .catalog {
   background: #f8f8f8;
   padding: 50px 20px 44px 20px;
+
+  @media (min-width: 768px) {
+    padding: 80px 20px 90px 20px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .catalog__description {
@@ -21,6 +29,15 @@
   line-height: 36px;
   color: #333333;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
 }
 
 .catalog__filter {
@@ -33,4 +50,11 @@
   margin: 0 0 40px 0;
   padding: 0;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
 }

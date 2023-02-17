@@ -1,7 +1,10 @@
 .price {
   border: none;
   padding: 0;
-  margin: 0 0 24px;
+
+  @media (min-width: 768px) {
+    width: 220px;
+  }
 }
 
 .price__title {
@@ -10,6 +13,10 @@
   line-height: 24px;
   margin-bottom: 32px;
   padding: 0;
+
+  @media (min-width: 768px) {
+    margin-left: -7px;
+  }
 }
 
 .price__wrapper {
@@ -24,5 +31,9 @@
     height: 2px;
     top: 17px;
     left: 135px;
+
+    @media (min-width: 768px) {
+      left: 105px;
+    }
   }
 }
