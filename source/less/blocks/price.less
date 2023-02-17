@@ -17,11 +17,19 @@
   @media (min-width: 768px) {
     margin-left: -7px;
   }
+
+  @media (min-width: 1440px) {
+    margin-left: 0;
+  }
 }
 
 .price__wrapper {
   display: flex;
   position: relative;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 31px;
+  }
 
   &::after {
     content: "";
@@ -34,6 +42,10 @@
 
     @media (min-width: 768px) {
       left: 105px;
+    }
+
+    @media (min-width: 1440px) {
+      left: 154px;
     }
   }
 }
