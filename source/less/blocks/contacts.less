@@ -1,5 +1,13 @@
 .contacts {
   padding: 21px 0;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 9px;
+  }
 }
 
 .contacts__title {
@@ -51,6 +59,14 @@
   max-width: 260px;
   font-style: normal;
   color: #333333;
+
+  @media (min-width: 768px) {
+    max-width: 200px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 317px;
+  }
 }
 
 .contacts__phone-text {
