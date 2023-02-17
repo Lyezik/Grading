@@ -2,13 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .filter-buttons__apply {
   justify-content: center;
   align-items: center;
   width: 160px;
-  height: 45px;
+  min-height: 45px;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   background: #7859cf;
@@ -16,17 +21,38 @@
   color: #ffffff;
   border-radius: 4px;
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    margin-left: 180px;
+    margin-right: 29px;
+    width: 148px;
+    min-height: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 0;
+    width: 153px;
+    margin-right: 15px;
+    font-size: 14px;
+  }
 }
 
 .filter-buttons__reset {
   justify-content: center;
   align-items: center;
+  font-weight: 400;
   width: 160px;
-  height: 45px;
+  min-height: 45px;
   font-size: 14px;
   line-height: 24px;
   background: #ffffff;
   border: none;
   color: #7859cf;
   border-radius: 4px;
+
+  @media (min-width: 768px) {
+    width: 139px;
+    min-height: 40px;
+  }
 }

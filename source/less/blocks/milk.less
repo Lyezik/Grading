@@ -1,6 +1,5 @@
 .milk {
   padding: 0;
-  margin: 0;
   border: 0;
 }
 
@@ -10,6 +9,10 @@
   line-height: 24px;
   margin-bottom: 23px;
   padding: 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .milk__list {
@@ -19,6 +22,10 @@
 
   & li:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 28px;
   }
 }
 
