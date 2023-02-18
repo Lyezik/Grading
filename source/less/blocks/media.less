@@ -1,5 +1,13 @@
 .media {
   padding: 20px 0;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 9px;
+  }
 }
 
 .media__title {
@@ -19,7 +27,6 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #333333;
   text-transform: uppercase;
   max-width: 280px;
 }
@@ -28,4 +35,21 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.media__link {
+  color: #333333;
+
+  &:focus {
+    outline: none;
+    color: #9070ec;
+  }
+
+  & :hover {
+    color: #9070ec;
+  }
+
+  & :active {
+    color: #593cac;
+  }
 }

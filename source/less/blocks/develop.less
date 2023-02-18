@@ -2,6 +2,15 @@
   padding: 0 37px;
   display: flex;
   gap: 3px;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    padding: 9px 37px 0 37px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
 }
 
 .develop__text {
@@ -12,7 +21,7 @@
   color: #bdbdbd;
 }
 
-.develop__button-text {
+.develop__wrapper-text {
   margin: 0;
   color: #bdbdbd;
   font-weight: 400;
@@ -20,12 +29,29 @@
   line-height: 16px;
 }
 
-.develop__button {
+.develop__wrapper {
   display: flex;
   gap: 4px;
 }
 
-.develop__button-svg {
+.develop__svg {
   width: 12px;
   height: 16px;
+}
+
+.develop__link {
+  fill: #bdbdbd;
+
+  &:focus {
+    outline: none;
+    fill: #7859cf;
+  }
+
+  & :hover {
+    fill: #7859cf;
+  }
+
+  & :active {
+    fill: #593cac;
+  }
 }

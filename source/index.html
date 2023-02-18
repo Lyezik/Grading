@@ -23,7 +23,7 @@
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
             <span class="visually-hidden">Аккаунт</span>
-            <svg class="nav-user__svg-user" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            <svg class="nav-user__svg-user" width="16" height="16" viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#user"></use>
             </svg>
@@ -33,7 +33,7 @@
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
             <span class="visually-hidden">Корзина</span>
-            <svg class="nav-user__svg-basket" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            <svg class="nav-user__svg-basket" width="16" height="16" viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#basket"></use>
             </svg>
@@ -44,22 +44,22 @@
     </div>
 
     <nav class="main-header__menu nav-menu nav-menu--closed nav-menu--nojs">
-      <button class="nav-menu__toggle" type="button">
+      <button class="nav-menu__toggle nav-menu__toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="nav-menu__container">
         <ul class="nav-menu__list">
           <li class="nav-menu__item">
-            <a class="nav-menu__link">Главная</a>
+            <a class="nav-menu__link nav-menu__link--current" href="#">Главная</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link">Каталог</a>
+            <a class="nav-menu__link" href="#">Каталог</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link">Доставка</a>
+            <a class="nav-menu__link" href="#">Доставка</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link">О нас</a>
+            <a class="nav-menu__link" href="#">О нас</a>
           </li>
         </ul>
       </div>
@@ -74,26 +74,40 @@
         <svg class="slider__svg" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/icons/stack.svg#arrow-left"></use>
         </svg>
-        <span class="visually-hidden">Переход на предыдущий слайд</span>
+        <span class="visually-hidden">Переход на предыдущий слайд.</span>
       </button>
       <div class="slider__card">
-        <img class="slider__img" src="/img/flat_white.png" width="280" height="280" alt="Банка с кофейным напитком">
-        <p class="slider__text">Новинка!</p>
-        <h2 class="slider__title">Декаф Флэт Уайт</h2>
-        <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
-          что нужно для расслабления после тяжёлого рабочего дня</p>
-        <div class="slider__buy">
-          <p class="slider__price-old">295₽</p>
-          <p class="slider__price">225₽</p>
-          <button class="slider__order button">Заказать</button>
+        <div claSS="slider__img">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="/img/flat-white-desktop.png" width="600" height="600">
+            <source media="(min-width: 768px)" srcset="/img/flat-white-tablet.png" width="476" height="476">
+            <img src="/img/flat-white.png" width="280" height="280" alt="Банка с кофейным напитком">
+          </picture>
+        </div>
+        <div class="slider__container">
+          <p class="slider__text">Новинка!</p>
+          <h2 class="slider__title">Декаф Флэт Уайт</h2>
+          <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским
+            молоком — то,
+            что нужно для расслабления после тяжёлого рабочего дня</p>
+          <div class="slider__buy">
+            <p class="slider__price-old">295₽</p>
+            <p class="slider__price">225₽</p>
+            <button class="slider__order button">Заказать</button>
+          </div>
         </div>
       </div>
       <button class="slider__button button">
         <svg class="slider__svg" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/icons/stack.svg#arrow-right"></use>
         </svg>
-        <span class="visually-hidden">Переход на следующий слайд</span>
+        <span class="visually-hidden">Переход на следующий слайд.</span>
       </button>
+      <div class="slider__step-container">
+        <button class="slider__step slider__step--current button" type="button"></button>
+        <button class="slider__step button" type="button"></button>
+        <button class="slider__step button" type="button"></button>
+      </div>
     </section>
 
     <section class="advantages">
@@ -104,31 +118,39 @@
           <svg class="advantages-card__svg" width="52" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/icons/stack.svg#clock"></use>
           </svg>
-          <h3 class="advantages-card__title">Скорость</h3>
-          <p class="advantages-card__description">Готовый напиток всегда под рукой — просто открой банку</p>
+          <div class="advantages-card__container">
+            <h3 class="advantages-card__title">Скорость</h3>
+            <p class="advantages-card__description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </div>
         </li>
         <li class="advantages__item advantages-card">
           <svg class="advantages-card__svg" width="52" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/icons/stack.svg#pocket"></use>
           </svg>
-          <h3 class="advantages-card__title">Удобство</h3>
-          <p class="advantages-card__description">Легко помещается и в карман,<br>
-            и в маленькую сумочку</p>
+          <div class="advantages-card__container">
+            <h3 class="advantages-card__title">Удобство</h3>
+            <p class="advantages-card__description">Легко помещается и в карман,<br>
+              и в маленькую сумочку</p>
+          </div>
         </li>
         <li class="advantages__item advantages-card">
           <svg class="advantages-card__svg" width="52" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/icons/stack.svg#lightning"></use>
           </svg>
-          <h3 class="advantages-card__title">Бодрость</h3>
-          <p class="advantages-card__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          <div class="advantages-card__container">
+            <h3 class="advantages-card__title">Бодрость</h3>
+            <p class="advantages-card__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </div>
         </li>
         <li class="advantages__item advantages-card">
           <svg class="advantages-card__svg" width="52" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/icons/stack.svg#leaf"></use>
           </svg>
-          <h3 class="advantages-card__title">Экологичность</h3>
-          <p class="advantages-card__description">Вся упаковка сделана<br>
-            из перерабатываемых материалов</p>
+          <div class="advantages-card__container">
+            <h3 class="advantages-card__title">Экологичность</h3>
+            <p class="advantages-card__description">Вся упаковка сделана<br>
+              из перерабатываемых материалов</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -253,8 +275,10 @@
         <ul class="catalog__list">
           <li class="catalog__item card">
             <a href="can-white">
-              <img class="card__img" src="/img/catalog/can-white.png" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <picture>
+                <img class="card__img" src="/img/catalog/can-white.png" srcset="/img/catalog/can-white@2x.png 2x"
+                  width="130" height="188" alt="Банка с кофейным напитком">
+              </picture>
             </a>
             <a href="can-white">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -271,10 +295,10 @@
               </button>
             </div>
           </li>
-          <li class="catalog__item card">
+          <li class="catalog__item card catalog__item--current">
             <a href="can-purple">
-              <img class="card__img" src="/img/catalog/can-purple.png" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-purple.png" srcset="/img/catalog/can-purple@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-purple">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -293,8 +317,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-black">
-              <img class="card__img" src="/img/catalog/can-black.png" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-black.png" srcset="/img/catalog/can-black@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-black">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -313,8 +337,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-pink">
-              <img class="card__img" src="/img/catalog/can-pink.png" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-pink.png" srcset="/img/catalog/can-pink@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-pink">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -333,8 +357,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-brown">
-              <img class="card__img" src="/img/catalog/can-brown.png" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-brown.png" srcset="/img/catalog/can-brown@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-brown">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -353,8 +377,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-yellow">
-              <img class="card__img" src="/img/catalog/can-yellow.png" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-yellow.png" srcset="/img/catalog/can-yellow@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-yellow">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -374,25 +398,31 @@
         </ul>
         <div class="catalog__pagination pagination">
           <ul class="pagination__list">
-            <li class="pagination__item">
-              <svg class="pagination__svg" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
-              </svg>
+            <li class="pagination__item pagination__item--previous">
+              <button class="pagination__button">
+                <svg class="pagination__svg" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
+                </svg>
+              </button>
+              <button class="pagination__previous pagination__button">Назад</button>
             </li>
             <li class="pagination__item">
-              <p class="pagination__number">1</p>
+              <button class="pagination__number pagination__button">1</button>
             </li>
             <li class="pagination__item pagination__item--current">
-              <p class="pagination__number">2</p>
+              <button class="pagination__number pagination__button">2</button>
             </li>
             <li class="pagination__item">
-              <p class="pagination__number">3</p>
+              <button class="pagination__number pagination__button">3</button>
             </li>
-            <li class="pagination__item">
-              <svg class="pagination__svg pagination__svg--right" width="10" height="10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
-              </svg>
+            <li class="pagination__item pagination__item--next">
+              <button class="pagination__button">
+                <svg class="pagination__svg pagination__svg--right" width="10" height="10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
+                </svg>
+              </button>
+              <button class="pagination__next pagination__button">Вперёд</button>
             </li>
           </ul>
         </div>
@@ -408,32 +438,39 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <svg width="82" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/stack.svg#logo-middle"></use>
-        </svg>
-        <span class="visually-hidden">Логотип Drink2Go</span>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-big.svg" width="170" height="36">
+          <img class="intro__img" src="img/logo-middle.svg" width="82" height="36" alt="Логотип Drink2Go">
+        </picture>
       </div>
+      <p class="main-footer__text">Интернет-магазин кофейных напитков</p>
 
       <section class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item button">
-            <span class="visually-hidden">Vkontakte</span>
-            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#vk"></use>
-            </svg>
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Vkontakte</span>
+              <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/stack.svg#vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item button">
-            <span class="visually-hidden">Pinterest</span>
-            <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#pinterest"></use>
-            </svg>
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Pinterest</span>
+              <svg class="social__svg" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/stack.svg#pinterest"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item button">
-            <span class="visually-hidden">Одноклассники</span>
-            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#ok"></use>
-            </svg>
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/stack.svg#ok"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -533,12 +570,14 @@
     <section class="main-footer__develop develop">
       <h2 class="visually-hidden">Develop info</h2>
       <p class="develop__text">Разработано в</p>
-      <a class="develop__button button" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="develop__button-text">HTML Academy</p>
-        <svg class="develop__button-svg" width="12" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/stack.svg#logo-htmlacademy"></use>
-        </svg>
-      </a>
+      <div class="develop__wrapper button" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="develop__wrapper-text">HTML Academy</p>
+        <a class="develop__link" href="#">
+          <svg class="develop__svg" width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/icons/stack.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </section>
   </footer>
 
