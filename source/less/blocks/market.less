@@ -20,6 +20,12 @@
   letter-spacing: 0.02em;
 }
 
+.market__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .market__text {
   margin: 0;
   padding: 8px 0;
@@ -27,13 +33,23 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #333333;
   text-transform: uppercase;
   max-width: 280px;
 }
 
-.market__list {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.market__link {
+  color: #333333;
+
+  &:focus {
+    outline: none;
+    color: #9070ec;
+  }
+
+  & :hover {
+    color: #9070ec;
+  }
+
+  & :active {
+    color: #593cac;
+  }
 }

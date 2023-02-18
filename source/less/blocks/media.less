@@ -27,7 +27,6 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #333333;
   text-transform: uppercase;
   max-width: 280px;
 }
@@ -36,4 +35,21 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.media__link {
+  color: #333333;
+
+  &:focus {
+    outline: none;
+    color: #9070ec;
+  }
+
+  & :hover {
+    color: #9070ec;
+  }
+
+  & :active {
+    color: #593cac;
+  }
 }

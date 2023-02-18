@@ -276,8 +276,8 @@
           <li class="catalog__item card">
             <a href="can-white">
               <picture>
-                <img class="card__img" src="/img/catalog/can-white.png" srcset="/img/catalog/can-white@2x.png 2x" width="130" height="188"
-                  alt="Банка с кофейным напитком">
+                <img class="card__img" src="/img/catalog/can-white.png" srcset="/img/catalog/can-white@2x.png 2x"
+                  width="130" height="188" alt="Банка с кофейным напитком">
               </picture>
             </a>
             <a href="can-white">
@@ -297,8 +297,8 @@
           </li>
           <li class="catalog__item card catalog__item--current">
             <a href="can-purple">
-              <img class="card__img" src="/img/catalog/can-purple.png" srcset="/img/catalog/can-purple@2x.png 2x" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-purple.png" srcset="/img/catalog/can-purple@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-purple">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -317,8 +317,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-black">
-              <img class="card__img" src="/img/catalog/can-black.png" srcset="/img/catalog/can-black@2x.png 2x" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-black.png" srcset="/img/catalog/can-black@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-black">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -337,8 +337,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-pink">
-              <img class="card__img" src="/img/catalog/can-pink.png" srcset="/img/catalog/can-pink@2x.png 2x" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-pink.png" srcset="/img/catalog/can-pink@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-pink">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -357,8 +357,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-brown">
-              <img class="card__img" src="/img/catalog/can-brown.png" srcset="/img/catalog/can-brown@2x.png 2x"  width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-brown.png" srcset="/img/catalog/can-brown@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-brown">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -377,8 +377,8 @@
           </li>
           <li class="catalog__item card">
             <a href="can-yellow">
-              <img class="card__img" src="/img/catalog/can-yellow.png" srcset="/img/catalog/can-yellow@2x.png 2x" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <img class="card__img" src="/img/catalog/can-yellow.png" srcset="/img/catalog/can-yellow@2x.png 2x"
+                width="130" height="188" alt="Банка с кофейным напитком">
             </a>
             <a href="can-yellow">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -449,22 +449,28 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item button">
-            <span class="visually-hidden">Vkontakte</span>
-            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#vk"></use>
-            </svg>
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Vkontakte</span>
+              <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/stack.svg#vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item button">
-            <span class="visually-hidden">Pinterest</span>
-            <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#pinterest"></use>
-            </svg>
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Pinterest</span>
+              <svg class="social__svg" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/stack.svg#pinterest"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item button">
-            <span class="visually-hidden">Одноклассники</span>
-            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icons/stack.svg#ok"></use>
-            </svg>
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/icons/stack.svg#ok"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -564,12 +570,14 @@
     <section class="main-footer__develop develop">
       <h2 class="visually-hidden">Develop info</h2>
       <p class="develop__text">Разработано в</p>
-      <a class="develop__button button" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="develop__button-text">HTML Academy</p>
-        <svg class="develop__button-svg" width="12" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/stack.svg#logo-htmlacademy"></use>
-        </svg>
-      </a>
+      <div class="develop__wrapper button" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="develop__wrapper-text">HTML Academy</p>
+        <a class="develop__link" href="#">
+          <svg class="develop__svg" width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/icons/stack.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </section>
   </footer>
 
