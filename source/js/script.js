@@ -1,9 +1,15 @@
 /* в этот файл добавляет скрипты*/
 let navMenu = document.querySelector('.nav-menu');
 let navToggle = document.querySelector('.nav-menu__toggle');
+let rangeToggle = document.querySelector('.range-scale__toggle');
+let rangeBar = document.querySelector('.range-scale__bar');
 
 navMenu.classList.remove('nav-menu--nojs');
 navToggle.classList.remove('nav-menu__toggle--nojs');
+
+if (rangeToggle.disabled) {
+  rangeBar.style = "background: #bdbdbd;"
+}
 
 navToggle.addEventListener('click', function () {
   if (navMenu.classList.contains('nav-menu--closed')) {
@@ -17,7 +23,7 @@ navToggle.addEventListener('click', function () {
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-/*   direction: 'vertical', */
+  /*   direction: 'vertical', */
   loop: true,
 
   // If we need pagination
