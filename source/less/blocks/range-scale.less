@@ -20,6 +20,16 @@
   background: #9070ec;
   position: absolute;
   top: -1px;
+  left: 12px;
+  width: 236px;
+
+  @media (min-width: 768px) {
+    width: 176px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 275px;
+  }
 }
 
 .range-scale__toggle {
@@ -29,6 +39,50 @@
   background: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.range-scale__toggle:hover {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: rgba(120, 89, 207, 0.25);
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+  }
+}
+
+.range-scale__toggle:focus {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: rgba(120, 89, 207, 0.25);
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+  }
+}
+
+.range-scale__toggle:active {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #7859cf;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+  }
+}
+
+.range-scale__toggle:disabled {
+  border: 2px solid #bdbdbd;
+  background: #ffffff;
 }
 
 .range-scale__toggle--min {
