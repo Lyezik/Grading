@@ -30,8 +30,6 @@
   left: 2px;
 }
 
-
-
 .checkbox-label__input:hover + .checkbox-label__mark {
   &::before {
     border: 2px solid #9070ec;
@@ -110,7 +108,9 @@
   }
 }
 
-
+.checkbox-label__input:disabled ~ .checkbox-label__description {
+  color: #e2e2e2;
+}
 
 .checkbox-label__input:checked + .checkbox-label__mark::after {
   content: "";

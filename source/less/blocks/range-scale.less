@@ -41,6 +41,50 @@
   cursor: pointer;
 }
 
+.range-scale__toggle:hover {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: rgba(120, 89, 207, 0.25);
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+  }
+}
+
+.range-scale__toggle:focus {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: rgba(120, 89, 207, 0.25);
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+  }
+}
+
+.range-scale__toggle:active {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #7859cf;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+  }
+}
+
+.range-scale__toggle:disabled {
+  border: 2px solid #bdbdbd;
+  background: #ffffff;
+}
+
 .range-scale__toggle--min {
   position: absolute;
   left: -12px;
