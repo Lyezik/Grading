@@ -108,6 +108,11 @@ export function processMap () {
     .pipe(gulp.dest('build/map'));
 }
 
+export function processSwiper () {
+  return gulp.src('source/swiper/swiper-bundle.css')
+    .pipe(gulp.dest('build/swiper'));
+}
+
 function reloadServer (done) {
   browser.reload();
   done();
@@ -129,7 +134,8 @@ function compileProject (done) {
     copyAssets,
     optimizeImages,
     createWebp,
-    processMap
+    processMap,
+    processSwiper
   )(done);
 }
 

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="map/leaflet.css">
+  <link rel="stylesheet" href="swiper/swiper-bundle.css">
 </head>
 
 <body class="page__body">
@@ -69,46 +70,70 @@
   <main class="main-container">
     <h1 class="visually-hidden"> Напитки Drink2Go</h1>
 
-    <section class="slider">
-      <button class="slider__button button">
-        <svg class="slider__svg" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/stack.svg#arrow-left"></use>
-        </svg>
-        <span class="visually-hidden">Переход на предыдущий слайд.</span>
-      </button>
-      <div class="slider__card">
-        <div claSS="slider__img">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
           <picture>
             <source media="(min-width: 1440px)" srcset="/img/flat-white-desktop.png" width="600" height="600">
             <source media="(min-width: 768px)" srcset="/img/flat-white-tablet.png" width="476" height="476">
-            <img src="/img/flat-white.png" width="280" height="280" alt="Банка с кофейным напитком">
+            <img class="swiper__img" src="/img/flat-white.png" width="280" height="280" alt="Банка с кофейным напитком">
           </picture>
+          <div class="swiper__container">
+            <p class="swiper__badge">Новинка!</p>
+            <h2 class="swiper__title">Декаф Флэт Уайт</h2>
+            <p class="swiper__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским
+              молоком — то,
+              что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="swiper__buy">
+              <p class="swiper__price-old">295₽</p>
+              <p class="swiper__price">225₽</p>
+              <button class="swiper__order button">Заказать</button>
+            </div>
+          </div>
         </div>
-        <div class="slider__container">
-          <p class="slider__text">Новинка!</p>
-          <h2 class="slider__title">Декаф Флэт Уайт</h2>
-          <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским
-            молоком — то,
-            что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div class="slider__buy">
-            <p class="slider__price-old">295₽</p>
-            <p class="slider__price">225₽</p>
-            <button class="slider__order button">Заказать</button>
+        <div class="swiper-slide">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="/img/flat-pink-desktop.png" width="600" height="600">
+            <source media="(min-width: 768px)" srcset="/img/flat-pink-tablet.png" width="476" height="476">
+            <img class="swiper__img" src="/img/flat-pink.png" width="280" height="280" alt="Банка с кофейным напитком">
+          </picture>
+          <div class="swiper__container">
+            <p class="swiper__badge">Новинка!</p>
+            <h2 class="swiper__title">Декаф Флэт Уайт</h2>
+            <p class="swiper__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским
+              молоком — то,
+              что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="swiper__buy">
+              <p class="swiper__price-old">295₽</p>
+              <p class="swiper__price">225₽</p>
+              <button class="swiper__order button">Заказать</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="/img/flat-black-desktop.png" width="600" height="600">
+            <source media="(min-width: 768px)" srcset="/img/flat-black-tablet.png" width="476" height="476">
+            <img class="swiper__img" src="/img/flat-black.png" width="280" height="280" alt="Банка с кофейным напитком">
+          </picture>
+          <div class="swiper__container">
+            <p class="swiper__badge">Новинка!</p>
+            <h2 class="swiper__title">Декаф Флэт Уайт</h2>
+            <p class="swiper__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским
+              молоком — то,
+              что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="swiper__buy">
+              <p class="swiper__price-old">295₽</p>
+              <p class="swiper__price">225₽</p>
+              <button class="swiper__order button">Заказать</button>
+            </div>
           </div>
         </div>
       </div>
-      <button class="slider__button button">
-        <svg class="slider__svg" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/stack.svg#arrow-right"></use>
-        </svg>
-        <span class="visually-hidden">Переход на следующий слайд.</span>
-      </button>
-      <div class="slider__step-container">
-        <button class="slider__step slider__step--current button" type="button"></button>
-        <button class="slider__step button" type="button"></button>
-        <button class="slider__step button" type="button"></button>
-      </div>
-    </section>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
 
     <section class="advantages">
       <p class="advantages__text">Преимущества</p>
@@ -164,7 +189,7 @@
             <fieldset class="filter__price price">
               <legend class="price__title">Цена</legend>
               <div class="range-scale">
-                <div class="range-scale__bar" style="left: 12px; width: 138px">
+                <div class="range-scale__bar">
                   <button class="range-scale__toggle range-scale__toggle--min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
@@ -209,7 +234,7 @@
                 </li>
                 <li class="milk__item">
                   <label class="radio-label button">
-                    <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-milk" disabled>
+                    <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-milk" disabled checked>
                     <span class="radio-label__mark"></span>
                     <span class="radio-label__description">Без молока</span>
                   </label>
@@ -249,7 +274,7 @@
                 </li>
                 <li class="country__item">
                   <label class="checkbox-label button">
-                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="Peru" disabled>
+                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="Peru" disabled checked>
                     <span class="checkbox-label__mark"></span>
                     <span class="checkbox-label__description">Перу</span>
                   </label>
@@ -583,6 +608,7 @@
 
   <script src="./js/script.js" defer></script>
   <script src="js/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
     var map = L.map('map').setView([59.968415, 30.317485], 14);
     L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
