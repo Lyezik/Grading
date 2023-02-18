@@ -30,18 +30,36 @@
   }
 }
 
-.nav-user__item {
-  @media (min-width: 1440px) {
-    padding: 0 20px;
-  }
-}
-
 .nav-user__link {
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 60px;
   min-height: 60px;
+
+  @media (min-width: 1440px) {
+    padding: 0 20px;
+  }
+
+  &:hover {
+    color: #7859cf;
+    fill: #7859cf;
+  }
+
+  &:focus {
+    color: #7859cf;
+    outline: none;
+    fill: #7859cf;
+  }
+
+  &:active {
+    background: #f0ebff;
+    fill: #333333;
+
+    @media (min-width: 768px) {
+      fill: #7859cf;
+    }
+  }
 }
 
 .nav-user__svg-user {

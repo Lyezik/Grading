@@ -50,6 +50,45 @@
   @media (min-width: 768px) {
     padding: 32px 20px;
   }
+
+  &--current {
+    @media (min-width: 768px) {
+      color: #7859cf;
+    }
+  }
+
+  &--current::after {
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      width: 103px;
+      height: 2px;
+      background: #7859cf;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &:hover {
+    color: #7859cf;
+    fill: #7859cf;
+  }
+
+  &:focus {
+    color: #7859cf;
+    outline: none;
+    fill: #7859cf;
+  }
+
+  &:active {
+    background: #f0ebff;
+    color: #333333;
+
+    @media (min-width: 768px) {
+      fill: #7859cf;
+      color: #7859cf;
+    }
+  }
 }
 
 .nav-menu__item {
@@ -82,6 +121,14 @@
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  &:active {
+    background: #f0ebff;
   }
 }
 

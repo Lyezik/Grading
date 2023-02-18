@@ -23,6 +23,17 @@
   }
 }
 
+.pagination__button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .pagination__item {
   display: flex;
   justify-content: center;
@@ -35,10 +46,10 @@
   color: #7859cf;
   border-radius: 4px;
 
-  &--current {
+  &--current .pagination__button {
     color: #333333;
     font-weight: 600;
-    background: rgba(255, 255, 255, 0);
+    background: #f8f8f8;
   }
 
   &--previous {

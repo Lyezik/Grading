@@ -23,7 +23,7 @@
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
             <span class="visually-hidden">Аккаунт</span>
-            <svg class="nav-user__svg-user" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            <svg class="nav-user__svg-user" width="16" height="16" viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#user"></use>
             </svg>
@@ -33,7 +33,7 @@
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
             <span class="visually-hidden">Корзина</span>
-            <svg class="nav-user__svg-basket" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            <svg class="nav-user__svg-basket" width="16" height="16" viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#basket"></use>
             </svg>
@@ -44,22 +44,22 @@
     </div>
 
     <nav class="main-header__menu nav-menu nav-menu--closed nav-menu--nojs">
-      <button class="nav-menu__toggle" type="button">
+      <button class="nav-menu__toggle nav-menu__toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="nav-menu__container">
         <ul class="nav-menu__list">
           <li class="nav-menu__item">
-            <a class="nav-menu__link">Главная</a>
+            <a class="nav-menu__link nav-menu__link--current" href="#">Главная</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link">Каталог</a>
+            <a class="nav-menu__link" href="#">Каталог</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link">Доставка</a>
+            <a class="nav-menu__link" href="#">Доставка</a>
           </li>
           <li class="nav-menu__item">
-            <a class="nav-menu__link">О нас</a>
+            <a class="nav-menu__link" href="#">О нас</a>
           </li>
         </ul>
       </div>
@@ -119,8 +119,8 @@
             <use xlink:href="img/icons/stack.svg#clock"></use>
           </svg>
           <div class="advantages-card__container">
-          <h3 class="advantages-card__title">Скорость</h3>
-          <p class="advantages-card__description">Готовый напиток всегда под рукой — просто открой банку</p>
+            <h3 class="advantages-card__title">Скорость</h3>
+            <p class="advantages-card__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </div>
         </li>
         <li class="advantages__item advantages-card">
@@ -128,9 +128,9 @@
             <use xlink:href="img/icons/stack.svg#pocket"></use>
           </svg>
           <div class="advantages-card__container">
-          <h3 class="advantages-card__title">Удобство</h3>
-          <p class="advantages-card__description">Легко помещается и в карман,<br>
-            и в маленькую сумочку</p>
+            <h3 class="advantages-card__title">Удобство</h3>
+            <p class="advantages-card__description">Легко помещается и в карман,<br>
+              и в маленькую сумочку</p>
           </div>
         </li>
         <li class="advantages__item advantages-card">
@@ -138,8 +138,8 @@
             <use xlink:href="img/icons/stack.svg#lightning"></use>
           </svg>
           <div class="advantages-card__container">
-          <h3 class="advantages-card__title">Бодрость</h3>
-          <p class="advantages-card__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            <h3 class="advantages-card__title">Бодрость</h3>
+            <p class="advantages-card__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </div>
         </li>
         <li class="advantages__item advantages-card">
@@ -147,9 +147,9 @@
             <use xlink:href="img/icons/stack.svg#leaf"></use>
           </svg>
           <div class="advantages-card__container">
-          <h3 class="advantages-card__title">Экологичность</h3>
-          <p class="advantages-card__description">Вся упаковка сделана<br>
-            из перерабатываемых материалов</p>
+            <h3 class="advantages-card__title">Экологичность</h3>
+            <p class="advantages-card__description">Вся упаковка сделана<br>
+              из перерабатываемых материалов</p>
           </div>
         </li>
       </ul>
@@ -275,8 +275,10 @@
         <ul class="catalog__list">
           <li class="catalog__item card">
             <a href="can-white">
-              <img class="card__img" src="/img/catalog/can-white.png" width="130" height="188"
-                alt="Банка с кофейным напитком">
+              <picture>
+                <img class="card__img" src="/img/catalog/can-white.png" srcset="/img/catalog/can-white@2x.png 2x" width="130" height="188"
+                  alt="Банка с кофейным напитком">
+              </picture>
             </a>
             <a href="can-white">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -293,9 +295,9 @@
               </button>
             </div>
           </li>
-          <li class="catalog__item card">
+          <li class="catalog__item card catalog__item--current">
             <a href="can-purple">
-              <img class="card__img" src="/img/catalog/can-purple.png" width="130" height="188"
+              <img class="card__img" src="/img/catalog/can-purple.png" srcset="/img/catalog/can-purple@2x.png 2x" width="130" height="188"
                 alt="Банка с кофейным напитком">
             </a>
             <a href="can-purple">
@@ -315,7 +317,7 @@
           </li>
           <li class="catalog__item card">
             <a href="can-black">
-              <img class="card__img" src="/img/catalog/can-black.png" width="130" height="188"
+              <img class="card__img" src="/img/catalog/can-black.png" srcset="/img/catalog/can-black@2x.png 2x" width="130" height="188"
                 alt="Банка с кофейным напитком">
             </a>
             <a href="can-black">
@@ -335,7 +337,7 @@
           </li>
           <li class="catalog__item card">
             <a href="can-pink">
-              <img class="card__img" src="/img/catalog/can-pink.png" width="130" height="188"
+              <img class="card__img" src="/img/catalog/can-pink.png" srcset="/img/catalog/can-pink@2x.png 2x" width="130" height="188"
                 alt="Банка с кофейным напитком">
             </a>
             <a href="can-pink">
@@ -355,7 +357,7 @@
           </li>
           <li class="catalog__item card">
             <a href="can-brown">
-              <img class="card__img" src="/img/catalog/can-brown.png" width="130" height="188"
+              <img class="card__img" src="/img/catalog/can-brown.png" srcset="/img/catalog/can-brown@2x.png 2x"  width="130" height="188"
                 alt="Банка с кофейным напитком">
             </a>
             <a href="can-brown">
@@ -375,7 +377,7 @@
           </li>
           <li class="catalog__item card">
             <a href="can-yellow">
-              <img class="card__img" src="/img/catalog/can-yellow.png" width="130" height="188"
+              <img class="card__img" src="/img/catalog/can-yellow.png" srcset="/img/catalog/can-yellow@2x.png 2x" width="130" height="188"
                 alt="Банка с кофейным напитком">
             </a>
             <a href="can-yellow">
@@ -397,26 +399,30 @@
         <div class="catalog__pagination pagination">
           <ul class="pagination__list">
             <li class="pagination__item pagination__item--previous">
-              <svg class="pagination__svg" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
-              </svg>
-              <p class="pagination__previous">Назад</p>
+              <button class="pagination__button">
+                <svg class="pagination__svg" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
+                </svg>
+              </button>
+              <button class="pagination__previous pagination__button">Назад</button>
             </li>
             <li class="pagination__item">
-              <p class="pagination__number">1</p>
+              <button class="pagination__number pagination__button">1</button>
             </li>
             <li class="pagination__item pagination__item--current">
-              <p class="pagination__number">2</p>
+              <button class="pagination__number pagination__button">2</button>
             </li>
             <li class="pagination__item">
-              <p class="pagination__number">3</p>
+              <button class="pagination__number pagination__button">3</button>
             </li>
             <li class="pagination__item pagination__item--next">
-              <svg class="pagination__svg pagination__svg--right" width="10" height="10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
-              </svg>
-              <p class="pagination__next">Вперёд</p>
+              <button class="pagination__button">
+                <svg class="pagination__svg pagination__svg--right" width="10" height="10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
+                </svg>
+              </button>
+              <button class="pagination__next pagination__button">Вперёд</button>
             </li>
           </ul>
         </div>
