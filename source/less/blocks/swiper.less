@@ -188,9 +188,10 @@
 .swiper__buy {
   display: flex;
   flex-direction: row;
-  max-width: 280px;
+  max-width: 400px;
   justify-content: center;
   margin: 0 auto;
+  gap: 6px;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
@@ -203,20 +204,22 @@
 }
 
 .swiper__price-old {
-  margin: auto 6px auto 0;
+  margin: auto 0;
   text-decoration-line: line-through;
   font-size: 16px;
   line-height: 32px;
   color: #7859cf;
   max-width: 60px;
+  word-break: break-word;
 }
 
 .swiper__price {
-  margin: auto 20px auto 0;
+  margin: auto 14px auto 0;
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   max-width: 60px;
+  word-break: break-word;
 }
 
 .swiper__order {

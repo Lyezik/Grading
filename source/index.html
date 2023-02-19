@@ -8,22 +8,26 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="map/leaflet.css">
   <link rel="stylesheet" href="swiper/swiper-bundle.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo header-logo">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./img/logo-big.svg">
-        <source media="(min-width: 768px)" srcset="./img/logo-middle.svg">
-        <img class="header-logo__image" src="./img/logo-small.svg" width="32" height="36" alt="Логотип Drink2Go">
-      </picture>
-    </a>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo header-logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/logo-big.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-middle.svg">
+          <img class="header-logo__image" src="./img/logo-small.svg" width="32" height="36" alt="Логотип Drink2Go">
+        </picture>
+      </a>
+    </div>
     <div class="main-header__user nav-user">
       <ul class="nav-user__list">
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
-            <span class="visually-hidden">Аккаунт</span>
             <svg class="nav-user__svg-user" width="16" height="16" viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#user"></use>
@@ -33,7 +37,6 @@
         </li>
         <li class="nav-user__item">
           <a class="nav-user__link" href="#">
-            <span class="visually-hidden">Корзина</span>
             <svg class="nav-user__svg-basket" width="16" height="16" viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/icons/stack.svg#basket"></use>
@@ -46,7 +49,7 @@
 
     <nav class="main-header__menu nav-menu nav-menu--closed nav-menu--nojs">
       <button class="nav-menu__toggle nav-menu__toggle--nojs" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="nav-menu__container">
         <ul class="nav-menu__list">
@@ -74,12 +77,18 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide--white">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="/img/flat-white-desktop.webp 1x, /img/flat-white-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="/img/flat-white-tablet.webp 1x, /img/flat-white-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/webp" srcset="/img/flat-white-tablet.webp 1x, /img/flat-white-tablet@2x.webp 2x"
+              width="280" height="280">
             <source media="(min-width: 1440px)" srcset="/img/flat-white-desktop.png, /img/flat-white-desktop@2x.png 2x"
               width="600" height="600">
             <source media="(min-width: 768px)" srcset="/img/flat-white-tablet.png, /img/flat-white-tablet@2x.png 2x"
               width="476" height="476">
             <img class="swiper__img" src="/img/flat-white.png" srcset="/img/flat-white@2x.png 2x" width="280"
-              height="280" alt="Белая банка с напитком Декаф Флэт Уайт">
+              height="280" alt="Банка с напитком Декаф Флэт Уайт">
           </picture>
           <div class="swiper__container">
             <p class="swiper__badge">Новинка!</p>
@@ -96,12 +105,18 @@
         </div>
         <div class="swiper-slide swiper-slide--purple">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="/img/flat-pink-desktop.webp 1x, /img/flat-pink-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="/img/flat-pink-tablet.webp 1x, /img/flat-pink-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/webp" srcset="/img/flat-pink-tablet.webp 1x, /img/flat-pink-tablet@2x.webp 2x"
+              width="280" height="280">
             <source media="(min-width: 1440px)" srcset="/img/flat-pink-desktop.png, /img/flat-pink-desktop@2x.png 2x"
               width="600" height="600">
             <source media="(min-width: 768px)" srcset="/img/flat-pink-tablet.png, /img/flat-pink-tablet@2x.png 2x"
               width="476" height="476">
             <img class="swiper__img" src="/img/flat-pink.png" srcset="/img/flat-pink@2x.png 2x" width="280" height="280"
-              alt="Фиолетовая банка с напитком Лавайдовый Латте">
+              alt="Банка с напитком Лавайдовый Латте">
           </picture>
           <div class="swiper__container">
             <p class="swiper__badge">Новинка!</p>
@@ -117,12 +132,18 @@
         </div>
         <div class="swiper-slide swiper-slide--black">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="/img/flat-black-desktop.webp 1x, /img/flat-black-desktop@2x.webp 2x" width="600" height="600">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="/img/flat-black-tablet.webp 1x, /img/flat-black-tablet@2x.webp 2x" width="476" height="476">
+            <source type="image/webp" srcset="/img/flat-black-tablet.webp 1x, /img/flat-black-tablet@2x.webp 2x"
+              width="280" height="280">
             <source media="(min-width: 1440px)" srcset="/img/flat-black-desktop.png, /img/flat-black-desktop@2x.png 2x"
               width="600" height="600">
             <source media="(min-width: 768px)" srcset="/img/flat-black-tablet.png, /img/flat-black-tablet@2x.png 2x"
               width="476" height="476">
             <img class="swiper__img" src="/img/flat-black.png" srcset="/img/flat-black@2x.png 2x" width="280"
-              height="280" alt="Черная банка с напитком Тройной Эспрессо">
+              height="280" alt="Банка с напитком Тройной Эспрессо">
           </picture>
           <div class="swiper__container">
             <p class="swiper__badge">Новинка!</p>
@@ -192,107 +213,112 @@
       <h2 class="catalog__title">Каталог кофейных напитков</h2>
       <div class="catalog__wrapper">
         <div class="catalog__filter filter">
-          <div class="filter__wrapper">
-            <fieldset class="filter__price price">
-              <legend class="price__title">Цена</legend>
-              <div class="range-scale">
-                <div class="range-scale__bar">
-                  <button class="range-scale__toggle range-scale__toggle--min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену</span>
-                  </button>
-                  <button class="range-scale__toggle range-scale__toggle--max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
-                  </button>
+          <form class="filter__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="filter__wrapper">
+              <fieldset class="filter__price price">
+                <legend class="price__title">Цена</legend>
+                <div class="range-scale">
+                  <div class="range-scale__bar">
+                    <button class="range-scale__toggle range-scale__toggle--min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-scale__toggle range-scale__toggle--max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div class="price__wrapper">
-                <label class="price-label">
-                  <input class="price-label__input price-label__input-min" type="number" name="min-price" placeholder="0">
-                </label>
-                <label class="price-label">
-                  <input class="price-label__input price-label__input-max" type="number" value="900" name="max-price" placeholder="0">
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="filter__milk milk">
-              <legend class="milk__title">Наличие молока</legend>
-              <ul class="milk__list">
-                <li class="milk__item">
-                  <label class="radio-label button">
-                    <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-matter"
-                      checked>
-                    <span class="radio-label__mark"></span>
-                    <span class="radio-label__description">Неважно</span>
+                <div class="price__wrapper">
+                  <label class="price-label">
+                    <input class="price-label__input price-label__input-min" type="number" name="min-price"
+                      placeholder="0">
                   </label>
-                </li>
-                <li class="milk__item">
-                  <label class="radio-label button">
-                    <input class="radio-label__input visually-hidden" type="radio" name="milk" value="only-animals">
-                    <span class="radio-label__mark"></span>
-                    <span class="radio-label__description">Только животные</span>
+                  <label class="price-label">
+                    <input class="price-label__input price-label__input-max" type="number" value="900" name="max-price"
+                      placeholder="0">
                   </label>
-                </li>
-                <li class="milk__item">
-                  <label class="radio-label button">
-                    <input class="radio-label__input visually-hidden" type="radio" name="milk" value="only-plants">
-                    <span class="radio-label__mark"></span>
-                    <span class="radio-label__description">Только растительное</span>
-                  </label>
-                </li>
-                <li class="milk__item">
-                  <label class="radio-label button">
-                    <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-milk" disabled>
-                    <span class="radio-label__mark"></span>
-                    <span class="radio-label__description">Без молока</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter__country country">
-              <legend class="country__title">Страна произрастания</legend>
-              <ul class="country__list">
-                <li class="country__item">
-                  <label class="checkbox-label button">
-                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="Brazil" checked>
-                    <span class="checkbox-label__mark"></span>
-                    <span class="checkbox-label__description">Бразилия</span>
-                  </label>
-                </li>
-                <li class="country__item">
-                  <label class="checkbox-label button">
-                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="Ethiopia">
-                    <span class="checkbox-label__mark"></span>
-                    <span class="checkbox-label__description">Эфиопия</span>
-                  </label>
-                </li>
-                <li class="country__item">
-                  <label class="checkbox-label button">
-                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="Colombia">
-                    <span class="checkbox-label__mark"></span>
-                    <span class="checkbox-label__description">Колумбия</span>
-                  </label>
-                </li>
-                <li class="country__item">
-                  <label class="checkbox-label button">
-                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="Costa-Rica">
-                    <span class="checkbox-label__mark"></span>
-                    <span class="checkbox-label__description">Коста-Рика</span>
-                  </label>
-                </li>
-                <li class="country__item">
-                  <label class="checkbox-label button">
-                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="Peru" disabled>
-                    <span class="checkbox-label__mark"></span>
-                    <span class="checkbox-label__description">Перу</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="filter__filter-buttons filter-buttons">
-            <button class="filter-buttons__apply button" type="button">Применить фильтр</button>
-            <button class="filter-buttons__reset button" type="reset">Сбросить фильтр</button>
-          </div>
+                </div>
+              </fieldset>
+              <fieldset class="filter__milk milk">
+                <legend class="milk__title">Наличие молока</legend>
+                <ul class="milk__list">
+                  <li class="milk__item">
+                    <label class="radio-label button">
+                      <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-matter"
+                        checked>
+                      <span class="radio-label__mark"></span>
+                      <span class="radio-label__description">Неважно</span>
+                    </label>
+                  </li>
+                  <li class="milk__item">
+                    <label class="radio-label button">
+                      <input class="radio-label__input visually-hidden" type="radio" name="milk" value="only-animals">
+                      <span class="radio-label__mark"></span>
+                      <span class="radio-label__description">Только животные</span>
+                    </label>
+                  </li>
+                  <li class="milk__item">
+                    <label class="radio-label button">
+                      <input class="radio-label__input visually-hidden" type="radio" name="milk" value="only-plants">
+                      <span class="radio-label__mark"></span>
+                      <span class="radio-label__description">Только растительное</span>
+                    </label>
+                  </li>
+                  <li class="milk__item">
+                    <label class="radio-label button">
+                      <input class="radio-label__input visually-hidden" type="radio" name="milk" value="no-milk"
+                        disabled>
+                      <span class="radio-label__mark"></span>
+                      <span class="radio-label__description">Без молока</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter__country country">
+                <legend class="country__title">Страна произрастания</legend>
+                <ul class="country__list">
+                  <li class="country__item">
+                    <label class="checkbox-label button">
+                      <input class="checkbox-label__input visually-hidden" type="checkbox" name="Brazil" checked>
+                      <span class="checkbox-label__mark"></span>
+                      <span class="checkbox-label__description">Бразилия</span>
+                    </label>
+                  </li>
+                  <li class="country__item">
+                    <label class="checkbox-label button">
+                      <input class="checkbox-label__input visually-hidden" type="checkbox" name="Ethiopia">
+                      <span class="checkbox-label__mark"></span>
+                      <span class="checkbox-label__description">Эфиопия</span>
+                    </label>
+                  </li>
+                  <li class="country__item">
+                    <label class="checkbox-label button">
+                      <input class="checkbox-label__input visually-hidden" type="checkbox" name="Colombia">
+                      <span class="checkbox-label__mark"></span>
+                      <span class="checkbox-label__description">Колумбия</span>
+                    </label>
+                  </li>
+                  <li class="country__item">
+                    <label class="checkbox-label button">
+                      <input class="checkbox-label__input visually-hidden" type="checkbox" name="Costa-Rica">
+                      <span class="checkbox-label__mark"></span>
+                      <span class="checkbox-label__description">Коста-Рика</span>
+                    </label>
+                  </li>
+                  <li class="country__item">
+                    <label class="checkbox-label button">
+                      <input class="checkbox-label__input visually-hidden" type="checkbox" name="Peru" disabled>
+                      <span class="checkbox-label__mark"></span>
+                      <span class="checkbox-label__description">Перу</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filter__filter-buttons filter-buttons">
+              <button class="filter-buttons__apply button" type="submit">Применить фильтр</button>
+              <button class="filter-buttons__reset button" type="reset">Сбросить фильтр</button>
+            </div>
+          </form>
         </div>
 
         <div class="catalog__sort sort">
@@ -308,8 +334,10 @@
           <li class="catalog__item card">
             <a href="can-white">
               <picture>
+                <source type="image/webp" srcset="/img/catalog/can-white.webp 1x, /img/catalog/can-white@2x.webp 2x"
+                  width="130" height="188">
                 <img class="card__img" src="/img/catalog/can-white.png" srcset="/img/catalog/can-white@2x.png 2x"
-                  width="130" height="188" alt="Банка с кофейным напитком">
+                  width="130" height="188" alt="Банка с напитком">
               </picture>
             </a>
             <a href="can-white">
@@ -329,8 +357,12 @@
           </li>
           <li class="catalog__item card catalog__item--current">
             <a href="can-purple">
-              <img class="card__img" src="/img/catalog/can-purple.png" srcset="/img/catalog/can-purple@2x.png 2x"
-                width="130" height="188" alt="Банка с кофейным напитком">
+              <picture>
+                <source type="image/webp" srcset="/img/catalog/can-purple.webp 1x, /img/catalog/can-purple@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__img" src="/img/catalog/can-purple.png" srcset="/img/catalog/can-purple@2x.png 2x"
+                  width="130" height="188" alt="Банка с напитком">
+              </picture>
             </a>
             <a href="can-purple">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -349,9 +381,12 @@
           </li>
           <li class="catalog__item card">
             <a href="can-black">
-              <img class="card__img" src="/img/catalog/can-black.png" srcset="/img/catalog/can-black@2x.png 2x"
-                width="130" height="188" alt="Банка с кофейным напитком">
-            </a>
+              <picture>
+                <source type="image/webp" srcset="/img/catalog/can-black.webp 1x, /img/catalog/can-black@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__img" src="/img/catalog/can-black.png" srcset="/img/catalog/can-black@2x.png 2x"
+                  width="130" height="188" alt="Банка с напитком">
+              </picture>
             <a href="can-black">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
             </a>
@@ -369,8 +404,12 @@
           </li>
           <li class="catalog__item card">
             <a href="can-pink">
-              <img class="card__img" src="/img/catalog/can-pink.png" srcset="/img/catalog/can-pink@2x.png 2x"
-                width="130" height="188" alt="Банка с кофейным напитком">
+              <picture>
+                <source type="image/webp" srcset="/img/catalog/can-pink.webp 1x, /img/catalog/can-pink@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__img" src="/img/catalog/can-pink.png" srcset="/img/catalog/can-pink@2x.png 2x"
+                  width="130" height="188" alt="Банка с кофейным напитком">
+              </picture>
             </a>
             <a href="can-pink">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -389,8 +428,12 @@
           </li>
           <li class="catalog__item card">
             <a href="can-brown">
-              <img class="card__img" src="/img/catalog/can-brown.png" srcset="/img/catalog/can-brown@2x.png 2x"
-                width="130" height="188" alt="Банка с кофейным напитком">
+              <picture>
+                <source type="image/webp" srcset="/img/catalog/can-brown.webp 1x, /img/catalog/can-brown@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__img" src="/img/catalog/can-brown.png" srcset="/img/catalog/can-brown@2x.png 2x"
+                  width="130" height="188" alt="Банка с кофейным напитком">
+              </picture>
             </a>
             <a href="can-brown">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -409,8 +452,12 @@
           </li>
           <li class="catalog__item card">
             <a href="can-yellow">
-              <img class="card__img" src="/img/catalog/can-yellow.png" srcset="/img/catalog/can-yellow@2x.png 2x"
-                width="130" height="188" alt="Банка с кофейным напитком">
+              <picture>
+                <source type="image/webp" srcset="/img/catalog/can-yellow.webp 1x, /img/catalog/can-yellow@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__img" src="/img/catalog/can-yellow.png" srcset="/img/catalog/can-yellow@2x.png 2x"
+                  width="130" height="188" alt="Банка с кофейным напитком">
+              </picture>
             </a>
             <a href="can-yellow">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -435,6 +482,7 @@
                 <svg class="pagination__svg" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
                 </svg>
+                <span class="visually-hidden">Стрелка назад.</span>
               </button>
               <button class="pagination__previous pagination__button">Назад</button>
             </li>
@@ -453,6 +501,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/icons/stack.svg#arrow-left-pagination"></use>
                 </svg>
+                <span class="visually-hidden">Стрелка вперёд.</span>
               </button>
               <button class="pagination__next pagination__button">Вперёд</button>
             </li>
@@ -463,7 +512,12 @@
 
     <section class="map">
       <h2 class="visually-hidden">Магазин Drink2Go на карте</h2>
-      <div class="map__container" id="map"></div>
+      <div class="map__container map__container--no-js" id="map"></div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1440" height="540">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768" height="480">
+        <img class="map__container-image" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="420" alt="Логотип Drink2Go">
+      </picture>
     </section>
   </main>
 
@@ -482,7 +536,7 @@
         <ul class="social__list">
           <li class="social__item button">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Vkontakte</span>
+              <span class="visually-hidden">Vkontakte.</span>
               <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/icons/stack.svg#vk"></use>
               </svg>
@@ -490,7 +544,7 @@
           </li>
           <li class="social__item button">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Pinterest</span>
+              <span class="visually-hidden">Pinterest.</span>
               <svg class="social__svg" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/icons/stack.svg#pinterest"></use>
               </svg>
@@ -498,7 +552,7 @@
           </li>
           <li class="social__item button">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Одноклассники</span>
+              <span class="visually-hidden">Одноклассники.</span>
               <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/icons/stack.svg#ok"></use>
               </svg>
@@ -577,7 +631,6 @@
           <h2 class="contacts__title">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <span class="visually-hidden">Адрес</span>
               <svg class="contacts__adress-svg" width="13" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/icons/stack.svg#adress"></use>
               </svg>
@@ -591,7 +644,6 @@
                 <a class="contacts__phone-link" href="tel:+79999999999">
                   +7&nbsp;(999)&nbsp;999-99-99
                 </a>
-                <span class="visually-hidden">Номер телефона для связи</span>
               </address>
             </li>
           </ul>
@@ -604,10 +656,10 @@
       <p class="develop__text">Разработано в</p>
       <a class="develop__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="develop__button-text">HTML Academy
-        <svg class="develop__button-svg" width="12" height="16" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/icons/stack.svg#logo-htmlacademy"></use>
-        </svg>
-      </span>
+          <svg class="develop__button-svg" width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/icons/stack.svg#logo-htmlacademy"></use>
+          </svg>
+        </span>
       </a>
     </section>
   </footer>
@@ -615,27 +667,6 @@
   <script src="./js/script.js" defer></script>
   <script src="js/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script>
-    var map = L.map('map').setView([59.968415, 30.317485], 14);
-    L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-      minZoom: 18,
-      zoomControl: false,
-      subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-    }).addTo(map);
-
-    var iconOptions = {
-      iconUrl: 'img/map/map-pin.png',
-      iconSize: [38, 50]
-    }
-    var customIcon = L.icon(iconOptions);
-    var markerOptions = {
-      clickable: true,
-      draggable: true,
-      icon: customIcon,
-    }
-    var marker = L.marker([59.968415, 30.317485], markerOptions);
-    marker.addTo(map);
-  </script>
 </body>
 
 </html>
