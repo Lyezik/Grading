@@ -1,11 +1,14 @@
 .sort {
   display: flex;
   margin: 0 0 16px 0;
-  padding-left: 3px;
 
   @media (min-width: 768px) {
     justify-content: end;
     margin-bottom: 27px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: -8px;
   }
 }
 
@@ -22,6 +25,7 @@
 }
 
 .sort__select {
+  position: relative;
   padding: 4px 30px 4px 10px;
   max-width: 165px;
   min-height: 32px;
@@ -37,10 +41,18 @@
 }
 
 .sort__select:hover {
-  background: #f0ebff;
+  background: url("/img/arrow-down.png") no-repeat, #f0ebff;
+  background-position: 94% 50%;
 }
 
 .sort__select:focus {
-  background: #f0ebff;
+  background: url("/img/arrow-down.png") no-repeat, #f0ebff;
+  background-position: 94% 50%;
+  outline: none;
+}
+
+.sort__select:active {
+  background: url("/img/arrow-up.png") no-repeat;
+  background-position: 94% 50%;
   outline: none;
 }

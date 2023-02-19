@@ -1,11 +1,11 @@
 .develop {
-  padding: 0 37px;
+  padding: 1px 20px 0 20px;
   display: flex;
   gap: 3px;
   justify-content: center;
 
   @media (min-width: 768px) {
-    padding: 9px 37px 0 37px;
+    padding: 10px 37px 0 37px;
   }
 
   @media (min-width: 1440px) {
@@ -21,37 +21,40 @@
   color: #bdbdbd;
 }
 
-.develop__wrapper-text {
+.develop__button-text {
   margin: 0;
-  color: #bdbdbd;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-}
-
-.develop__wrapper {
+  color: #bdbdbd;
   display: flex;
-  gap: 4px;
+  gap: 6;
 }
 
-.develop__svg {
+.develop__button-svg {
   width: 12px;
   height: 16px;
+  margin-left: 6px;
+
+  @media (min-width: 1440px) {
+    margin-left: 3px;
+  }
 }
 
 .develop__link {
   fill: #bdbdbd;
 
-  &:focus {
-    outline: none;
+  & :hover {
+    color: #7859cf;
     fill: #7859cf;
   }
 
-  & :hover {
-    fill: #7859cf;
+  & :focus {
+    outline: none;
+    color: #7859cf;
   }
 
   & :active {
-    fill: #593cac;
+    color: #593cac;
   }
 }
